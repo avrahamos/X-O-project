@@ -4,7 +4,7 @@ import { generateJWT } from "../utils/ganreteToken";
 import { getFileData, saveFileData } from "../config/getData";
 
 export default class AuthService {
-  public async register(
+  public static async register(
     userName: string,
     password: string
   ): Promise<User | null> {
@@ -28,7 +28,7 @@ export default class AuthService {
     }
   }
 
-  public async login(
+  public static async login(
     userName: string,
     password: string
   ): Promise<string | null> {
