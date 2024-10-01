@@ -5,6 +5,16 @@ export class Game {
     public id: string,
     public playerX: string,
     public playerO: string,
+    public userId: string,
+    public board: string[][] = this.createEmptyBoard(),
     public status: string = GameStatus.Ongoing
   ) {}
+
+  private createEmptyBoard(): string[][] {
+    return [
+      ["", "", ""],
+      ["", "", ""],
+      ["", "", ""],
+    ];
+  }
 }
