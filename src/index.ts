@@ -8,7 +8,7 @@ import "dotenv/config";
 const app: Express = express();
 const nodeServer = createServer(app);
 const ioServer = new Server(nodeServer);
-
+app.use("/front", express.static("frontend"));
 app.use("/auth");
 app.use("/games");
 
