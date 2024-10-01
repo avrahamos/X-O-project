@@ -1,0 +1,35 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+  }
+
+  .boxsign{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 20vw;
+    height: 50vh;
+    background-color: rgba(156, 128, 128, 0.4);
+    border-radius: 10px;
+    margin-top: 27vh;
+    margin-left: 39vw;
+  }
+  input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  
