@@ -15,6 +15,6 @@ export function verifyJWT(token: string): object | string {
   try {
     return jwt.verify(token, process.env.SECRET_KAY as string);
   } catch (error) {
-    throw new Error("JWT eror");
+    throw new Error("Jwt eror");
   }
 }
